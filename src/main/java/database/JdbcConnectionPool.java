@@ -9,7 +9,6 @@ import java.util.concurrent.BlockingQueue;
 public class JdbcConnectionPool {
     private static final String FAILED_INITIALIZE = "커넥션 풀 초기화에 실패했습니다.";
     private static final String FAILED_TO_GET_CONNECTION = "커넥션 획득에 실패했습니다.";
-    private static final String FAILED_TO_TERMINATE = "종료에 실패했습니다.";
     private static final String FAILED_RELEASE = "커넥션 해제에 실패했습니다.";
     private static final int INITIAL_POOL_SIZE = 2;
     private static final JdbcConnectionPool INSTANCE = new JdbcConnectionPool();
