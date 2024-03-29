@@ -65,15 +65,4 @@ public class JdbcConnectionPool {
             throw new RuntimeException(FAILED_RELEASE);
         }
     }
-
-    public void shutdown() {
-        try {
-            for (Connection connection : pool) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(FAILED_TO_TERMINATE);
-        }
-        pool.clear();
-    }
 }
